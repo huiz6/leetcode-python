@@ -2,7 +2,6 @@ from typing import List
 
 
 class MaxAreaOfIsland:
-
     DIRECTION = [[1, 0], [0, 1], [-1, 0], [0, -1]]
 
     def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
@@ -27,8 +26,11 @@ class MaxAreaOfIsland:
 
 if __name__ == "__main__":
     max_area_of_island: MaxAreaOfIsland = MaxAreaOfIsland()
-    grid = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
-            [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0],
-            [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]
-    print(max_area_of_island.maxAreaOfIsland(grid))
+    grid1 = [[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0],
+             [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0],
+             [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+             [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]
+    print(max_area_of_island.maxAreaOfIsland(grid1))
+
+    grid2 = [[0, 1, 1, 1, 1, 0, 0, 0]]
+    print(max_area_of_island.maxAreaOfIsland(grid2))
